@@ -1,0 +1,24 @@
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Go module files
+vendor/
+*.sum
+
+# Build directories
+bin/
+build/
+
+# Coverage files
+*.out
+
+# IDE/Editor settings
+.idea/
+.vscode/
+
+.DS_STORE
