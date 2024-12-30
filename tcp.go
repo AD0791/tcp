@@ -74,6 +74,7 @@ func (s *Server) Stop() {
 
 func main() {
 	foundation_server := NewTCPServer(":3000")
+	defer foundation_server.Stop()
 	log.Println("The tcp server has started in the port :3000")
 	go func() {
 		for msg := range foundation_server.msgch {
